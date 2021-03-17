@@ -1,0 +1,32 @@
+{
+  "name": "gaetanchevailler_6_14-03-2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaetan-c/GaetanChevailler_6_14-03-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaetan-c/GaetanChevailler_6_14-03-2021/issues"
+  },
+  "homepage": "https://github.com/Gaetan-c/GaetanChevailler_6_14-03-2021#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.0",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.2",
+    "node": "^15.10.0",
+    "nodemon": "^2.0.7",
+    "password-validator": "^5.1.1"
+  }
+}
