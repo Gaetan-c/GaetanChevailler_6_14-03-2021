@@ -1,4 +1,4 @@
-const Sauce = require('../models/sauce')
+const Sauce = require('../models/sauces')
 const fs = require('fs')
 
 exports.createSauce = (req, res, next) => {
@@ -16,7 +16,6 @@ exports.createSauce = (req, res, next) => {
     .then(() => res.status(201).json({ message: 'Nouvelle sauce ajoutée !'}))
     .catch(error => res.status(400).json({ error }))
 }
-// writeHead??
 
 exports.getOneSauce = (req, res, next) => {
   Sauce.findOne({

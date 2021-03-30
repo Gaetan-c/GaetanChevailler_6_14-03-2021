@@ -31,13 +31,13 @@ exports.login = (req, res, next) => {
         res.status(200).json({
           userId: user._id,
           token: jwt.sign(
-            { userId: user_id},
+            { userId: user._id },
             'RANDOM_TOKEN_SECRET',
-            {expiresIn: '24h'}
+            { expiresIn: '24h' }
           )
         })
       })
-      .catch(error => res.status(500).json({ error: 'mauvaise comparaison password' }))
+      .catch(error => res.status(500).json({ error: 'mauvaise comparaison password' + error }))
   })
-  .catch(error => res.status(500).json({ error: 'Utilisateur inexistant' }))
+  .catch(error => res.status(500).json({ error: 'Utilisateur inexistant' + error}))
 }
